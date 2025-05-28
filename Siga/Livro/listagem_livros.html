@@ -1,0 +1,32 @@
+  <!-- Filtro -->
+  <form action="lista_livros.php" method="GET">
+    <fieldset>
+        <legend>Busca</legend>
+        <label for="busca">Busca</label>
+        <input type="text" name="busca">
+        <label for="tipo">Tipo</label>
+        <select name="tipo">
+            <option value="0">Selecione</option>
+            <option value="1">ID</option>
+            <option value="2">Título</option>
+            <option value="3">Autor</option>
+            <option value="4">Publicação</option>
+            <option value="5">Gênero</option>
+            <option value="6">Páginas</option>
+        </select>
+        <button type="submit">Buscar</button>
+    </fieldset>
+</form>
+
+<!-- Listagem -->
+<h1>Listagem de Livros</h1>
+<table border="1px">
+    <th>Id</th>
+    <th>Título</th>
+    <th>Autor</th>
+    <th>Publicação</th>
+    <th>Gênero</th>
+    <th>Páginas</th>
+    <th>Capa</th>
+    {itens}
+  </table>
